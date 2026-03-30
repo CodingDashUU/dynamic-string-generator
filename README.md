@@ -1,8 +1,13 @@
-# 💰 DYNAMIC STRING GENERATOR
+# 🔠 DYNAMIC STRING GENERATOR
 
 ### A string generator that allows you to generate strings (characters) the cool way. You have 2 types of generators, simple generator for casual users who are only concerned with the length of their strings, and dynamic generator for power users allowing you to customize the length of lowercase, uppercase, numbers and special characters (symbols)
 
 ### Link to live app: <https://dynamic-string-generator.pages.dev>
+
+## STRING GENERATION
+
+- For string generation, I used the native browser's `crypto.getRandomValues()` function for cryptographically secure strings, this means you can use this generator for casual and safe generation
+- For shuffling the strings, I used the **Fisher Yates** Algorithm combined with `crypto.getRandomValues()`
 
 ## SIMPLE STRING GENERATOR
 
@@ -12,7 +17,7 @@
 - You can also customize whether each string can have repeating characters or not
 - Maximum amount of strings you can generate at once is 99, minimum is 1
 - Default amount of strings is 1
-- Default amount of strings is 16
+- Default length of strings is 16
 - This generator is recommended for most people
 
 ## DYNAMIC STRING GENERATOR
@@ -27,9 +32,9 @@
 - The max amount of symbols is 28: ! @ # $ % ^ & * ( ) _ - + = { [ } ] | : ; ? / > < . , ~
 - You can also see the total amount of characters below ( lowercase + uppercase + numbers + symbols )
 - You can also customize whether each string can have repeating characters or not
-- Maximum amount of strings you can generate at once is 99, minimum is 1
 - Default amount of strings is 1
-- Default amount of strings is 16
+- Default length of strings is 16
+- Maximum amount of strings you can generate at once is 99, minimum is 1
 - This is recommended for people who like to control how many of each type of character gets generated
 
 ## STRING VIEWER
@@ -72,7 +77,6 @@
 
 - Framework: Vue 3 + Vite
 - UI Library: Vuetify
-- Charts: ApexCharts
 - Language: TypeScript
 - Package manager: npm
 
