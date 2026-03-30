@@ -1,36 +1,80 @@
-# string-generator
+# 💰 DYNAMIC STRING GENERATOR
 
-Scaffolded with Vuetify CLI.
+### A string generator that allows you to generate strings (characters) the cool way. You have 2 types of generators, simple generator for casual users who are only concerned with the length of their strings, and dynamic generator for power users allowing you to customize the length of lowercase, uppercase, numbers and special characters (symbols)
 
-## ❗️ Documentation
+### Link to live app: <https://dynamic-string-generator.pages.dev>
 
-- Primary docs: https://vuetifyjs.com/
-- Getting started guide: https://vuetifyjs.com/en/getting-started/installation/
-- Community support: https://community.vuetifyjs.com/
-- Issue tracker: https://issues.vuetifyjs.com/
+## SIMPLE STRING GENERATOR
+
+![Picture of simple generator UI](image.png)
+
+- You only customize the length of each string
+- You can also customize whether each string can have repeating characters or not
+- Maximum amount of strings you can generate at once is 99, minimum is 1
+- Default amount of strings is 1
+- Default amount of strings is 16
+- This generator is recommended for most people
+
+## DYNAMIC STRING GENERATOR
+
+![Picture of dynamic generator UI](image-1.png)
+
+- You can customize the following:
+  1. The amount of lowercase characters (a - z)
+  2. The amount of uppercase characters (A - Z)
+  3. The amount of numbers (0 - 9)
+  4. The amount of special characters/symbols/punctuation (!, @, #, $ etc)
+- The max amount of symbols is 28: ! @ # $ % ^ & * ( ) _ - + = { [ } ] | : ; ? / > < . , ~
+- You can also see the total amount of characters below ( lowercase + uppercase + numbers + symbols )
+- You can also customize whether each string can have repeating characters or not
+- Maximum amount of strings you can generate at once is 99, minimum is 1
+- Default amount of strings is 1
+- Default amount of strings is 16
+- This is recommended for people who like to control how many of each type of character gets generated
+
+## STRING VIEWER
+
+![alt text](image-2.png)
+
+- Here you can view all the strings you just generated (resets after every generation)
+- COPYING
+  - Select all the strings you want to copy in the boxes adjacent to the index
+  - Press the button below, and each string selected will get copied to your clipboard
+  - The strings are copied at a rate of 3.33 strings/sec
+
+## UNIQUENESS
+
+- For both simple and dynamic generators you can specify whether you want the characters to repeat or not
+- Usually this means you can specify as many type of characters to be generated in the dynamic generator
+- But in this case, you can only specify as many characters that exist for that type of character (eg. 26 lowercase, 26 uppercase, 10 numbers and 28 symbols) because in this mode, characters aren't allowed to repeat
+- This only applies to dynamic generator, but for simple generator you can only specify the length to be up to 90, as opposed to the normal length of 99
+
+## CHARACTER SET
+
+![Picture of character set UI](image-3.png)
+
+- This is the fun part, you are allowed to toggle which character you want to exclude during generation
+- That means that in any string generated, you won't see any characters you toggled within any of the strings
+- But be careful, if you exclude all characters of 1 type, you wont be able to specify the amount of that character in the dynamic string generator, since it will be at 0
+- If you specify to generate unique strings (no repeating characters) then you will only be able to specify the amount of a certain character depending on how many you excluded (eg. if you excluded 6 numbers, you will only be able to specify up to 4 numbers to be generated)
+- This is for the dynamic generator, but for the simple generator, you will only be able to specify the length of the string depending on the amount of characters that weren't excluded (eg. if you excluded 3 numbers, 8 symbols and 2 lowercase characters, you can only specify the string length up to 77 characters)
+- The total amount of characters in the character set is 90
+
+## What this app is great for
+
+- Password Generators
+- Token Generators
+- Key Generators
+- Any generator for random characters
+- Just to have fun with!
 
 ## 🧱 Stack
 
 - Framework: Vue 3 + Vite
 - UI Library: Vuetify
+- Charts: ApexCharts
 - Language: TypeScript
 - Package manager: npm
-
-## 🧭 Start Here
-
-- Main entry: `src/main.ts`
-- Main app component: `src/App.vue`
-- Main styles: `src/styles/`
-- Plugin setup: `src/plugins/`
-
-## 📁 Project Structure
-
-- `src/main.ts` — application entry point
-- `src/App.vue` — root component
-- `src/components/` — reusable Vue components
-- `src/plugins/` — plugin registration and setup
-- `src/styles/` — global styles and theme settings
-- `public/` — static public files
 
 ## ✨ Enabled Features
 
@@ -58,22 +102,3 @@ npm run dev
 ```bash
 npm run build
 ```
-
-## 🧪 Available Scripts
-
-- `npm run dev`
-- `npm run build`
-- `npm run preview`
-- `npm run build-only`
-- `npm run type-check`
-- `npm run lint`
-- `npm run lint:fix`
-
-## 💪 Support Vuetify Development
-
-This project uses Vuetify - an MIT licensed Open Source project. We are glad to welcome contributors and any support for ongoing development:
-
-- Contribute to Vuetify and ecosystem projects: https://github.com/vuetifyjs
-- Request enterprise support: https://support.vuetifyjs.com/
-- Sponsor on GitHub: https://github.com/sponsors/vuetifyjs
-- Support on Open Collective: https://opencollective.com/vuetify
