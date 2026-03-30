@@ -1,0 +1,21 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+ @use 'vuetify/settings' with (
+   $color-pack: false
+ );
+
+$h1Size: 60px;
+
+h1 {
+ font-size: $h1Size;
+ text-align: center;
+}
+.page {
+ text-align: center;
+ width: 60vw;
+ margin: 0 auto;
+}
