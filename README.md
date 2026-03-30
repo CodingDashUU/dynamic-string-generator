@@ -39,14 +39,21 @@ Link to live app: <https://dynamic-string-generator.pages.dev>
 
 ## STRING VIEWER
 
-![alt text](image-2.png)
+![Picture of string viewer UI](image-4.png)
 
 - Here you can view all the strings you just generated (resets after every generation)
 - COPYING
   - Select all the strings you want to copy in the boxes adjacent to the index
-  - Press the button below, and each string selected will get copied to your clipboard
-  - The strings are copied at a rate of 3.33 strings/sec
-  - This ensures that all strings get copied into your clipboard individually, due to the asynchronous nature of `navigator.clipboard`
+  - COPY SELECTED STRINGS AS A QUEUE
+    - This copied all the selected strings one by one like a queue
+    - The strings are copied at a rate of 3.33 strings/sec
+    - This ensures that all strings get copied into your clipboard individually, due to the asynchronous nature of `navigator.clipboard`
+    - Due to this, its only recommended to use this option if you only copy a small amount of strings at a time, otherwise this option will be too slow
+    - This option is good for copying a small amount of strings at once, and/or if you want to paste them individually
+  - COPY SELECTED STRINGS AS A BLOB
+    - This copied all the selected strings at once in 1 go
+    - This is very good if you are copying a large amount of strings at once and cannot wait, since unlike the other option, it is synchronous and therefore has no delay
+    - This is less convenient than the other option and is not recommended if you want to have each individual string to paste
 
 ## UNIQUENESS
 
