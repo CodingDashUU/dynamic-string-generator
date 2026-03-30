@@ -1,8 +1,8 @@
 # 🔠 DYNAMIC STRING GENERATOR
 
-### A string generator that allows you to generate strings (characters) the cool way. You have 2 types of generators, simple generator for casual users who are only concerned with the length of their strings, and dynamic generator for power users allowing you to customize the length of lowercase, uppercase, numbers and special characters (symbols)
+A string generator that allows you to generate strings (characters) the cool way. You have 2 types of generators, simple generator for casual users who are only concerned with the length of their strings, and dynamic generator for power users allowing you to customize the length of lowercase, uppercase, numbers and special characters (symbols)
 
-### Link to live app: <https://dynamic-string-generator.pages.dev>
+Link to live app: <https://dynamic-string-generator.pages.dev>
 
 ## STRING GENERATION
 
@@ -46,6 +46,7 @@
   - Select all the strings you want to copy in the boxes adjacent to the index
   - Press the button below, and each string selected will get copied to your clipboard
   - The strings are copied at a rate of 3.33 strings/sec
+  - This ensures that all strings get copied into your clipboard individually, due to the asynchronous nature of `navigator.clipboard`
 
 ## UNIQUENESS
 
