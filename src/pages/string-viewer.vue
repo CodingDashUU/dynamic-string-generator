@@ -13,6 +13,7 @@
 </script>
 
 <template>
+  <h1>STRING VIEWER</h1>
   <v-data-table v-model="stringsSelected" item-value="value" :items="store.generatedStrings.map((value, index) => { return { index: index+1, value: value } })" show-select />
   <div style="text-align: center; margin: 0 auto;">
     <v-btn style="width: 100vw" @click="copyAllStrings">Copy Selected Strings</v-btn>

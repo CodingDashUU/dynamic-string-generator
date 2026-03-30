@@ -48,9 +48,9 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
-    '/view-strings-page': RouteRecordInfo<
-      '/view-strings-page',
-      '/view-strings-page',
+    '/string-viewer': RouteRecordInfo<
+      '/string-viewer',
+      '/string-viewer',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -86,9 +86,9 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
-    'src/pages/view-strings-page.vue': {
+    'src/pages/string-viewer.vue': {
       routes:
-        | '/view-strings-page'
+        | '/string-viewer'
       views:
         | never
     }

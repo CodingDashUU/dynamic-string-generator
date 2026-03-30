@@ -18,7 +18,7 @@
         <v-list density="compact" nav>
           <v-list-item prepend-icon="mdi-star" title="Simple Generator" to="/" value="simple" />
           <v-list-item prepend-icon="mdi-creation" title="Dynamic Generator" to="/dynamic-generator-page" value="dynamic" />
-          <v-list-item prepend-icon="mdi-magnify" title="View Strings" to="/view-strings-page" value="view" />
+          <v-list-item prepend-icon="mdi-magnify" title="String Viewer" to="/string-viewer" value="view" />
           <v-list-item prepend-icon="mdi-symbol" title="Character Set" to="/character-set" value="character" />
         </v-list>
       </v-navigation-drawer>
