@@ -11,7 +11,7 @@ Link to live app: <https://dynamic-string-generator.pages.dev>
 
 ## SIMPLE STRING GENERATOR
 
-![Picture of simple generator UI](image.png)
+![simple generator UI](src/assets/image1.png)
 
 - You only customize the length of each string
 - You can also customize whether each string can have repeating characters or not
@@ -22,7 +22,7 @@ Link to live app: <https://dynamic-string-generator.pages.dev>
 
 ## DYNAMIC STRING GENERATOR
 
-![Picture of dynamic generator UI](image-1.png)
+![dynamic generator UI](src/assets/image2.png)
 
 - You can customize the following:
   1. The amount of lowercase characters (a - z)
@@ -39,7 +39,7 @@ Link to live app: <https://dynamic-string-generator.pages.dev>
 
 ## STRING VIEWER
 
-![Picture of string viewer UI](image-4.png)
+![string viewer UI](src/assets/image3.png)
 
 - Here you can view all the strings you just generated (resets after every generation)
 - COPYING
@@ -64,7 +64,7 @@ Link to live app: <https://dynamic-string-generator.pages.dev>
 
 ## CHARACTER SET
 
-![Picture of character set UI](image-3.png)
+![character set UI](src/assets/image4.png)
 
 - This is the fun part, you are allowed to toggle which character you want to exclude during generation
 - That means that in any string generated, you won't see any characters you toggled within any of the strings
