@@ -85,11 +85,9 @@ export const useGeneratorStore = defineStore('generator', {
       this.generatedStrings = []
       while (this.generatedStrings.length < this.stringAmount) {
         let tempString = ''
-        while (tempString.length < this.stringLength) {
-          const randomValue = randomArrayValue(this.chars)
-          if (!tempString.includes(randomValue)) {
-            tempString += randomValue
-          }
+        const charPool = fisherYatesShuffle(this.chars).slice(0, this.stringLength)
+        for (const element of fisherYatesShuffle(charPool)) {
+          tempString += element
         }
         this.generatedStrings.push(tempString)
       }

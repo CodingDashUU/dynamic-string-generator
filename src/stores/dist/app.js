@@ -88,11 +88,10 @@ exports.useGeneratorStore = pinia_1.defineStore('generator', {
             this.generatedStrings = [];
             while (this.generatedStrings.length < this.stringAmount) {
                 var tempString = '';
-                while (tempString.length < this.stringLength) {
-                    var randomValue_1 = randomArrayValue(this.chars);
-                    if (!tempString.includes(randomValue_1)) {
-                        tempString += randomValue_1;
-                    }
+                var charPool = fisherYatesShuffle(this.chars).slice(0, this.stringLength);
+                for (var _i = 0, _a = fisherYatesShuffle(charPool); _i < _a.length; _i++) {
+                    var element = _a[_i];
+                    tempString += element;
                 }
                 this.generatedStrings.push(tempString);
             }

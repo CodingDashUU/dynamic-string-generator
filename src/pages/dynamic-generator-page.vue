@@ -77,7 +77,7 @@
         :hide-input="false"
         :inset="false"
         label="Amount of strings to generate"
-        :max="99"
+        :max="999"
         :min="0"
         :reverse="false"
         variant="outlined"

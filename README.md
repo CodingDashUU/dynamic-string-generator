@@ -15,7 +15,7 @@ Link to live app: <https://dynamic-string-generator.pages.dev>
 
 - You only customize the length of each string
 - You can also customize whether each string can have repeating characters or not
-- Maximum amount of strings you can generate at once is 99, minimum is 1
+- Maximum amount of strings you can generate at once is 999, minimum is 1
 - Default amount of strings is 1
 - Default length of strings is 16
 - This generator is recommended for most people
@@ -34,7 +34,7 @@ Link to live app: <https://dynamic-string-generator.pages.dev>
 - You can also customize whether each string can have repeating characters or not
 - Default amount of strings is 1
 - Default length of strings is 16
-- Maximum amount of strings you can generate at once is 99, minimum is 1
+- Maximum amount of strings you can generate at once is 999, minimum is 1
 - This is recommended for people who like to control how many of each type of character gets generated
 
 ## STRING VIEWER
